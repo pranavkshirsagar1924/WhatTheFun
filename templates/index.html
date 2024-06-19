@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="content">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="video-panel">
+            <video controls>
+                <source src="https://videos.pexels.com/video-files/6581285/6581285-sd_640_360_24fps.mp4">
+            </video>
+            <p>
+            <h2>NSFW Comment Detector</h2>
+            <p>Simply enter a comment with some NSFW words.<br>If the model detects it as NSFW content, it will
+                automatically add with Red flag.</p>
+            </p>
+            <div id="comments-panel">
+                <input type="text" id="t" placeholder="Post a comment">
+                <button id="submit" onclick="make_comment()">Sent</button>
+            </div>
+        </div>
+        <div id="comment-board"></div>
+    </div>
+    <script src="/static/script.js"/>
+</body>
+
+</html>
